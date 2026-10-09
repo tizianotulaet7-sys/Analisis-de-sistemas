@@ -1,0 +1,961 @@
+```css
+/*
+========================================================================
+FUENTES
+========================================================================
+
+Se utilizan fuentes que normalmente están disponibles en Windows.
+
+La primera fuente es Segoe UI, utilizada para una apariencia moderna.
+
+Las siguientes fuentes funcionan como alternativas.
+*/
+
+body {
+
+    font-family:
+
+        "Segoe UI",
+        Consolas,
+        "Courier New",
+        Arial,
+        sans-serif;
+
+}
+
+
+/*
+========================================================================
+CONFIGURACIÓN GENERAL
+========================================================================
+*/
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    min-height: 100vh;
+
+
+    /*
+    Fondo oscuro con degradado.
+
+    La combinación busca representar:
+
+    - Desarrollo.
+    - Tecnología.
+    - Infraestructura.
+    - Sistemas.
+    */
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #080d18,
+
+            #101827,
+
+            #111827
+
+        );
+
+
+    color: #e5e7eb;
+
+}
+
+
+/*
+========================================================================
+HEADER
+========================================================================
+*/
+
+.header-principal {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+
+    padding:
+
+        25px 8%;
+
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #0f172a,
+
+            #111827
+
+        );
+
+
+    border-bottom:
+
+        1px solid #243047;
+
+
+    box-shadow:
+
+        0 4px 20px
+
+        rgba(
+
+            0,
+
+            0,
+
+            0,
+
+            0.4
+
+        );
+
+}
+
+
+/*
+========================================================================
+LOGO
+========================================================================
+*/
+
+.logo {
+
+    font-family:
+
+        Consolas,
+
+        "Courier New",
+
+        monospace;
+
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #22d3ee;
+
+}
+
+
+.logo-icono {
+
+    color: #a855f7;
+
+}
+
+
+/*
+========================================================================
+INFORMACIÓN DEL HEADER
+========================================================================
+*/
+
+.header-info {
+
+    text-align: right;
+
+}
+
+
+.header-info h1 {
+
+    margin: 0;
+
+    color: #f1f5f9;
+
+    font-size: 24px;
+
+}
+
+
+.header-info p {
+
+    margin-top: 5px;
+
+    color: #94a3b8;
+
+}
+
+
+/*
+========================================================================
+CONTENIDO PRINCIPAL
+========================================================================
+*/
+
+main {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding:
+
+        50px 0;
+
+}
+
+
+/*
+========================================================================
+INTRODUCCIÓN
+========================================================================
+*/
+
+.introduccion {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+
+.terminal-text {
+
+    display: inline-block;
+
+    font-family:
+
+        Consolas,
+
+        monospace;
+
+
+    color: #22c55e;
+
+    background-color: #020617;
+
+    padding:
+
+        8px 15px;
+
+
+    border:
+
+        1px solid #1e293b;
+
+
+    border-radius: 6px;
+
+}
+
+
+.introduccion h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.introduccion p {
+
+    color: #94a3b8;
+
+}
+
+
+/*
+========================================================================
+CONTENEDOR DE TARJETAS
+========================================================================
+*/
+
+.contenedor-tarjetas {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(
+
+            2,
+
+            1fr
+
+        );
+
+
+    gap: 30px;
+
+}
+
+
+/*
+========================================================================
+TARJETAS GENERALES
+========================================================================
+*/
+
+.tarjeta {
+
+    position: relative;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+
+    /*
+    Fondo oscuro semitransparente.
+    */
+
+    background:
+
+        rgba(
+
+            15,
+
+            23,
+
+            42,
+
+            0.9
+
+        );
+
+
+    border:
+
+        1px solid
+
+        #263449;
+
+
+    box-shadow:
+
+        0 15px 40px
+
+        rgba(
+
+            0,
+
+            0,
+
+            0,
+
+            0.3
+
+        );
+
+
+    transition:
+
+        transform 0.3s ease,
+
+        box-shadow 0.3s ease;
+
+}
+
+
+/*
+Efecto al pasar el mouse.
+*/
+
+.tarjeta:hover {
+
+    transform:
+
+        translateY(
+
+            -8px
+
+        );
+
+
+    box-shadow:
+
+        0 20px 50px
+
+        rgba(
+
+            0,
+
+            0,
+
+            0,
+
+            0.5
+
+        );
+
+}
+
+
+/*
+========================================================================
+TARJETA PERSONAL
+========================================================================
+*/
+
+.tarjeta-personal {
+
+    border-top:
+
+        4px solid
+
+        #22d3ee;
+
+}
+
+
+/*
+========================================================================
+TARJETA BASE DE DATOS
+========================================================================
+*/
+
+.tarjeta-db {
+
+    border-top:
+
+        4px solid
+
+        #a855f7;
+
+}
+
+
+/*
+========================================================================
+ICONOS
+========================================================================
+*/
+
+.icono-tarjeta {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/*
+========================================================================
+TÍTULOS
+========================================================================
+*/
+
+.tarjeta h2 {
+
+    margin-top: 0;
+
+    color: #f8fafc;
+
+}
+
+
+/*
+========================================================================
+LISTA DE DATOS
+========================================================================
+*/
+
+.datos-lista {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.dato {
+
+    padding: 15px;
+
+
+    background-color:
+
+        #111827;
+
+
+    border:
+
+        1px solid
+
+        #243047;
+
+
+    border-radius: 8px;
+
+}
+
+
+/*
+Etiqueta.
+
+Ejemplo:
+
+MATERIA
+PROFESOR
+EMAIL
+*/
+
+.etiqueta {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+    color: #64748b;
+
+}
+
+
+/*
+Valor del dato.
+*/
+
+.valor {
+
+    color: #dbeafe;
+
+    font-size: 16px;
+
+}
+
+
+/*
+========================================================================
+ESTADO DE CONEXIÓN
+========================================================================
+*/
+
+.estado {
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+
+/*
+Conexión exitosa.
+*/
+
+.conexion-ok {
+
+    color: #bbf7d0;
+
+    background-color:
+
+        rgba(
+
+            22,
+
+            101,
+
+            52,
+
+            0.3
+
+        );
+
+
+    border:
+
+        1px solid
+
+        #166534;
+
+}
+
+
+/*
+Conexión con error.
+*/
+
+.conexion-error {
+
+    color: #fecaca;
+
+    background-color:
+
+        rgba(
+
+            127,
+
+            29,
+
+            29,
+
+            0.3
+
+        );
+
+
+    border:
+
+        1px solid
+
+        #991b1b;
+
+}
+
+
+/*
+========================================================================
+BOTONES
+========================================================================
+*/
+
+.boton-principal,
+
+.boton-db {
+
+    border: none;
+
+    cursor: pointer;
+
+    font-family:
+
+        Consolas,
+
+        "Segoe UI",
+
+        sans-serif;
+
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+
+    transition:
+
+        transform 0.2s,
+
+        box-shadow 0.2s;
+
+}
+
+
+/*
+Botón principal.
+*/
+
+.boton-principal {
+
+    margin-top: 40px;
+
+    padding:
+
+        16px 35px;
+
+
+    font-size: 17px;
+
+
+    color: #061018;
+
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #22d3ee,
+
+            #38bdf8
+
+        );
+
+
+    box-shadow:
+
+        0 5px 20px
+
+        rgba(
+
+            34,
+
+            211,
+
+            238,
+
+            0.3
+
+        );
+
+}
+
+
+/*
+Botón de conexión.
+*/
+
+.boton-db {
+
+    margin-top: 20px;
+
+    padding:
+
+        12px 20px;
+
+
+    background-color:
+
+        #7c3aed;
+
+
+    color: white;
+
+}
+
+
+/*
+Efecto hover de los botones.
+*/
+
+.boton-principal:hover,
+
+.boton-db:hover {
+
+    transform:
+
+        scale(
+
+            1.05
+
+        );
+
+}
+
+
+/*
+========================================================================
+RESULTADOS DE JAVASCRIPT
+========================================================================
+*/
+
+.resultado-js,
+
+.mensaje-bienvenida {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 8px;
+
+}
+
+
+.resultado-js {
+
+    background-color:
+
+        #111827;
+
+
+    border:
+
+        1px solid
+
+        #334155;
+
+}
+
+
+.mensaje-bienvenida {
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #0f766e,
+
+            #0891b2
+
+        );
+
+
+    color: white;
+
+
+    font-weight: bold;
+
+}
+
+
+/*
+========================================================================
+SECCIÓN DE BIENVENIDA
+========================================================================
+*/
+
+.seccion-bienvenida {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+}
+
+
+/*
+========================================================================
+FOOTER
+========================================================================
+*/
+
+footer {
+
+    padding:
+
+        30px;
+
+
+    text-align: center;
+
+
+    background-color:
+
+        #020617;
+
+
+    border-top:
+
+        1px solid
+
+        #1e293b;
+
+
+    color:
+
+        #cbd5e1;
+
+}
+
+
+.footer-tech {
+
+    font-family:
+
+        Consolas,
+
+        monospace;
+
+
+    color:
+
+        #64748b;
+
+
+    font-size:
+
+        13px;
+
+}
+
+
+/*
+========================================================================
+RESPONSIVE
+========================================================================
+
+Cuando la pantalla es pequeña,
+las tarjetas pasan de dos columnas
+a una sola columna.
+*/
+
+@media (
+
+    max-width: 850px
+
+) {
+
+
+    .contenedor-tarjetas {
+
+        grid-template-columns:
+
+            1fr;
+
+    }
+
+
+    .header-principal {
+
+        justify-content:
+
+            center;
+
+        text-align:
+
+            center;
+
+    }
+
+
+    .header-info {
+
+        text-align:
+
+            center;
+
+    }
+
+
+    .introduccion h2 {
+
+        font-size:
+
+            27px;
+
+    }
+
+}
+```
